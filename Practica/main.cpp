@@ -59,6 +59,7 @@ void main()
 
 	int a[4] = {3,6,9,5};
 	GetNOD(a, 4);
+	/*Polinom(коэффиц, степень, число)*/
 	Polinom x(1, 3, 0);
 	Polinom x2(12, 2, 3), c;
 	c=c.Multiplication( x, x2);

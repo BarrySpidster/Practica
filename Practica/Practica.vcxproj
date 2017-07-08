@@ -144,9 +144,11 @@
   <ItemGroup>
     <ClCompile Include="main.cpp" />
     <ClCompile Include="Polinom.cpp" />
+    <ClCompile Include="Virajenie.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Polinom.h" />
+    <ClInclude Include="Virajenie.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

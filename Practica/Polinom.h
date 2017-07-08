@@ -2,7 +2,7 @@
 class Polinom
 {
 	float coeffic;
-	int degree;
+	float degree;
 	float number;
 
 public:
@@ -14,7 +14,11 @@ public:
 	float GetNumber();
 	void Division();
 	void Print();
+	void SetDegree( float degree);
+	void SetCoeff(float coef);
+	void SetNumber(float number);
 	Polinom Multiplication(Polinom x1,Polinom x2);
+	Polinom GetMultiplier(Polinom x1, Polinom x2);
 	~Polinom();
 };
 

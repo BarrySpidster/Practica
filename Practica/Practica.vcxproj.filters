@@ -21,9 +21,15 @@
     <ClCompile Include="Polinom.cpp">
       <Filter>Файлы исходного кода</Filter>
     </ClCompile>
+    <ClCompile Include="Virajenie.cpp">
+      <Filter>Файлы исходного кода</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Polinom.h">
+      <Filter>Заголовочные файлы</Filter>
+    </ClInclude>
+    <ClInclude Include="Virajenie.h">
       <Filter>Заголовочные файлы</Filter>
     </ClInclude>
   </ItemGroup>
