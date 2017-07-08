@@ -1,0 +1,5 @@
+﻿  main.cpp
+c:\users\уткир\documents\visual studio 2015\projects\practica\practica\main.cpp(38): warning C4018: <: несоответствие типов со знаком и без знака
+c:\users\уткир\documents\visual studio 2015\projects\practica\practica\main.cpp(21): warning C4101: k: неиспользованная локальная переменная
+  Practica.vcxproj -> C:\Users\Уткир\documents\visual studio 2015\Projects\Practica\Debug\Practica.exe
+  Practica.vcxproj -> C:\Users\Уткир\documents\visual studio 2015\Projects\Practica\Debug\Practica.pdb (Full PDB)
