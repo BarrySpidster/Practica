@@ -1,24 +1,19 @@
 #pragma once
+#include <vector>
+#include "Monomial.h"
+using namespace std;
 class Polinom
 {
-	float coeffic;
-	float degree;
-	float number;
-
+	vector<Monomial> virajenie;
 public:
+	vector<Monomial> Division(vector<Monomial> delitel);
+	void SetVirajenie(Monomial obj);
+	vector<Monomial> Multiplication(vector<Monomial>delitel, Monomial mnoj );
+	Monomial GetPolinom(int i);
+	vector<Monomial> Substraction(vector<Monomial> vichetaemoe);
+
+
 	Polinom();
-	Polinom(float coeffic,int degree,float number);
-	
-	int GetDegree();
-	float GetCoeff();
-	float GetNumber();
-	void Division();
-	void Print();
-	void SetDegree( float degree);
-	void SetCoeff(float coef);
-	void SetNumber(float number);
-	Polinom Multiplication(Polinom x1,Polinom x2);
-	Polinom GetMultiplier(Polinom x1, Polinom x2);
 	~Polinom();
 };
 
