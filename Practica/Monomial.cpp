@@ -4,16 +4,15 @@ using namespace std;
 
 Monomial::Monomial()
 {
-	number = 0;
+	//number = 0;
 	coeffic = 1;
 	degree = 1;
 }
 
-Monomial::Monomial(float coeffic, int degree, float number)
+Monomial::Monomial(float coeffic, float degree)
 {
 	this->coeffic = coeffic;
 	this->degree = degree;
-	this->number = number;
 }
 
 int Monomial::GetDegree()
@@ -24,11 +23,6 @@ int Monomial::GetDegree()
 float Monomial::GetCoeff()
 {
 	return this->coeffic;
-}
-
-float Monomial::GetNumber()
-{
-	return this->number;
 }
 
 
@@ -42,28 +36,22 @@ void Monomial::SetCoeff(float coef)
 	this->coeffic = coef;
 }
 
-void Monomial::SetNumber(float number)
-{
-	this->number = number;
-}
 
-void Monomial::Delete()
+Monomial Monomial::operator=(Monomial x1)
 {
-	delete this;
+	return Monomial(this->coeffic = x1.GetCoeff(), this->degree = x1.GetDegree());
 }
-
 
 Monomial Monomial::Multiplication(Monomial x1, Monomial x2)
 {
-
+	return Monomial();
 }
 
 Monomial Monomial::GetMultiplier(Monomial x1, Monomial x2)
 {
-
 	Monomial answer;
-	answer.coeffic = x1.coeffic / x2.coeffic;//коэффиценты делятся
-	answer.degree = x1.degree - x2.degree;//степени отнимаются
+	answer.SetCoeff( x1.coeffic / x2.coeffic);//коэффиценты делятся
+	answer.SetDegree( x1.degree - x2.degree);//степени отнимаются
 	return answer;
 }
 
@@ -71,7 +59,7 @@ Monomial Monomial::Substraction(Monomial x2)
 {
 	Monomial a;
 	int coef = GetCoeff() - x2.GetCoeff();
-	if (coef != 0)
+	if (coef != 0 && GetDegree()==x2.GetDegree())
 		a.SetCoeff(GetCoeff() - x2.GetCoeff());
 
 	return a;

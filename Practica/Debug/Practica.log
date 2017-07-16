@@ -1,5 +1,12 @@
-﻿  main.cpp
-c:\users\уткир\documents\visual studio 2015\projects\practica\practica\main.cpp(38): warning C4018: <: несоответствие типов со знаком и без знака
-c:\users\уткир\documents\visual studio 2015\projects\practica\practica\main.cpp(21): warning C4101: k: неиспользованная локальная переменная
-  Practica.vcxproj -> C:\Users\Уткир\documents\visual studio 2015\Projects\Practica\Debug\Practica.exe
-  Practica.vcxproj -> C:\Users\Уткир\documents\visual studio 2015\Projects\Practica\Debug\Practica.pdb (Full PDB)
+﻿  Polinom.cpp
+c:\users\уткир\ideaprojects\practica\practica\polinom.cpp(8): warning C4018: <: несоответствие типов со знаком и без знака
+c:\users\уткир\ideaprojects\practica\practica\polinom.cpp(29): warning C4018: <: несоответствие типов со знаком и без знака
+c:\users\уткир\ideaprojects\practica\practica\polinom.cpp(33): warning C4244: аргумент: преобразование "int" в "float", возможна потеря данных
+c:\users\уткир\ideaprojects\practica\practica\polinom.cpp(49): warning C4018: <: несоответствие типов со знаком и без знака
+c:\users\уткир\ideaprojects\practica\practica\polinom.cpp(55): warning C4018: <: несоответствие типов со знаком и без знака
+c:\users\уткир\ideaprojects\practica\practica\polinom.cpp(52): warning C4102: std: неиспользованная метка
+c:\users\уткир\ideaprojects\practica\practica\polinom.cpp(78): warning C4018: <: несоответствие типов со знаком и без знака
+c:\users\уткир\ideaprojects\practica\practica\polinom.cpp(81): warning C4244: аргумент: преобразование "int" в "float", возможна потеря данных
+main.obj : warning LNK4075: не учитывается "/EDITANDCONTINUE" из-за спецификации "/OPT:LBR"
+  Practica.vcxproj -> C:\Users\Уткир\IdeaProjects\Practica\Debug\Practica.exe
+  Practica.vcxproj -> C:\Users\Уткир\IdeaProjects\Practica\Debug\Practica.pdb (Full PDB)

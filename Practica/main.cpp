@@ -1,11 +1,15 @@
 #include <iostream>
 #include <vector>
+#include "Monomial.h"
 #include "Polinom.h"
+#include "Gauss.h"
+
+#include "SistemaVectorov.h"
 using namespace std;
 
 int Min(int *numbers, int size)
 {
-	int min=numbers[0];
+	int min = numbers[0];
 	for (int i = 1; i < size; i++)
 	{
 		if (numbers[i] < min)
@@ -15,7 +19,7 @@ int Min(int *numbers, int size)
 	return min;
 }
 
-void GetNOD(int *numbers,int size)
+void GetNOD(int *numbers, int size)
 {
 	int min = Min(numbers, size);
 	int k, NOD, boof;
@@ -41,29 +45,70 @@ void GetNOD(int *numbers,int size)
 				max = NODS[i];
 		}
 
-		cout << "NOD " << max << endl;
+		cout << "НОД " << max << endl;
 	}
 	else
 	{
-		cout << "NOD is not exist" << endl;
+		cout << "НОД is not exist" << endl;
 	}
-	
+
 }
 
+Polinom CreatePolinom(Polinom virajenie)
+{
 
+	Monomial x1;
+	float coef;
+	float degree;
+	float number;
+	int n;
+	cout << "Введите количество членов полинома" << endl;
+	cin >> n;
+
+	for (int i = 0; i < n; i++)
+	{
+		cout << "Введите коеффициент: ";
+		cin >> coef;
+		cout << endl;
+		cout << "Введите степень: ";
+		cin >> degree;
+		cout << endl;
+		x1.SetCoeff(coef);
+		x1.SetDegree(degree);
+	//	x1.SetNumber(number);
+		virajenie.SetViraj(x1);
+	}
+	return virajenie;
+}
 
 
 
 void main()
 {
+	setlocale(LC_ALL, "rus");
+	cout << "Введите количество элементов для поиска НОД" << endl;
+	int n;
+	cin >> n;
+	int *a=new int [n];
+	for (int i = 0; i < n; i++)
+	{
+		cout << "Введите целое число" << endl;
+		cin >> a[i];
+	}
 
-	int a[4] = {3,6,9,5};
-	GetNOD(a, 4);
-	/*Polinom(коэффиц, степень, число)*/
-	Polinom x(1, 3, 0);
-	Polinom x2(12, 2, 3), c;
-	c=c.Multiplication( x, x2);
-	c.Print();
+	GetNOD(a, n);
+	cout << "Деление многочлено" << endl;
+	Polinom delimoe;
+	Polinom delitel;
+	
+	delimoe = CreatePolinom(delimoe);
+	delitel = CreatePolinom(delitel);
+	delimoe.Division(delitel.GetViraj());
+
+	cout << "Ортогональные векторы" << endl;
+	Ortogonal();
+	cout << "Метод Гаусса" << endl;
+	Gauss();
 
 	system("pause");
 

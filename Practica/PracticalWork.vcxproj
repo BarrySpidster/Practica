@@ -19,9 +19,9 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGuid>{EB74D065-376C-467B-9E4D-14F7A4578EB5}</ProjectGuid>
+    <ProjectGuid>{2731721A-9F2F-4C3C-A29B-5FA8169AA052}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
-    <RootNamespace>Practica</RootNamespace>
+    <RootNamespace>PracticalWork</RootNamespace>
     <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -142,13 +142,15 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="Gauss.h" />
+    <ClInclude Include="Monomial.h" />
+    <ClInclude Include="Polinom.h" />
+    <ClInclude Include="SistemaVectorov.h" />
+  </ItemGroup>
+  <ItemGroup>
     <ClCompile Include="main.cpp" />
     <ClCompile Include="Monomial.cpp" />
     <ClCompile Include="Polinom.cpp" />
-  </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="Monomial.h" />
-    <ClInclude Include="Polinom.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
